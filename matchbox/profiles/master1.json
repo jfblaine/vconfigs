@@ -1,14 +1,14 @@
 {
- "id": "bootstrap",
- "name": "Bootstrap server",
- "ignition_id": "bootstrap.ign",
+ "id": "master0",
+ "name": "master0 server",
+ "ignition_id": "master0.ign",
  "boot": {
   "kernel": "/assets/rhcos-4.3.0-x86_64-installer-kernel",
   "initrd": [
    "/assets/rhcos-4.3.0-x86_64-installer-initramfs.img"
    ],
    "args": [
-    "ip=166.34.187.58::<gateway>:<netmask>:<hostname>:<iface>:none nameserver=srv1 [nameserver=srv2 [nameserver=srv3 […]]",
+    "ip=<ip>::<gateway>:<netmask>:<hostname>:<iface>:none nameserver=srv1 [nameserver=srv2 [nameserver=srv3 […]]",
     "rd.neednet=1",
     "console=tty0",
     "console=ttyS0",
